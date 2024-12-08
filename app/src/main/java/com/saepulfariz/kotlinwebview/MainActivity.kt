@@ -27,8 +27,10 @@ class MainActivity : AppCompatActivity() {
         // onPageFinished and override Url loading.
         webView.webViewClient = WebViewClient()
 
+        val url = getString(R.string.webview_url)
+
         // this will load the url of the website
-        webView.loadUrl("https://github.com/saepulfariz")
+        webView.loadUrl(url)
 
         // this will enable the javascript settings, it can also allow xss vulnerabilities
         webView.settings.javaScriptEnabled = true

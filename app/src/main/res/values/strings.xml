@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">KotlinWebView</string>
+    <string name="webview_url">https://github.com/saepulfariz</string>
 </resources>
