@@ -37,4 +37,15 @@ class MainActivity : AppCompatActivity() {
         webView.settings.setSupportZoom(true)
 
     }
+
+    // if you press Back button this code will work
+    override fun onBackPressed() {
+        // if your webview can go back it will go back
+        if (webView.canGoBack())
+            webView.goBack()
+        // if your webview cannot go back
+        // it will exit the application
+        else
+            super.onBackPressed()
+    }
 }
